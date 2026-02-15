@@ -1,17 +1,30 @@
-# automated_plant_watering_system
-Java-based automated plant watering system using Arduino and soil moisture sensing
+This project implements an automated plant watering system using Java integrated with an Arduino-based hardware setup. The system monitors soil moisture in real time and automatically activates a water pump when the soil becomes dry.
 
-## Dependencies
-This project was developed using Java and requires external libraries to support Arduino communication, OLED display output, and data visualization.
+⚙️ How It Works
+	•	A soil moisture sensor continuously measures soil conditions.
+	•	Sensor data is sent to the Java application via serial communication.
+	•	When moisture drops below a set threshold:
+	•	The system activates a MOSFET/Relay module.
+	•	The water pump turns on.
+	•	Once optimal moisture is reached, the pump turns off.
+	•	A live graph displays soil moisture levels in real time.
 
-- **Firmata4j**  
-  Enables communication between the Java application and the Arduino using the Firmata protocol.
+Technologies Used
+	•	Java
+	•	Arduino
+	•	Soil Moisture Sensor
+	•	MOSFET / Relay Module
+	•	Serial Communication
 
-- **SSD1306 OLED Library**  
-  Provides display control for the 128×64 OLED screen via I2C.
+ Results
 
-- **StdDraw (Princeton CS Library)**  
-  Used to generate a real-time graph of soil moisture readings.
+The system successfully:
+	•	Detected dry soil conditions
+	•	Activated and deactivated the pump automatically
+	•	Displayed real-time moisture data
 
-These dependencies are not included in the repository and must be manually added to the Java build path when running the project locally.  
-Hardware components (Arduino, moisture sensor, pump, OLED display) are required for full system functionality.
+ Key Concepts
+	•	Object-Oriented Programming
+	•	Hardware–Software Integration
+	•	Real-Time Monitoring
+	•	Automation Logic
