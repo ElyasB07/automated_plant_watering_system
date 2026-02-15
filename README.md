@@ -1,30 +1,37 @@
-This project implements an automated plant watering system using Java integrated with an Arduino-based hardware setup. The system monitors soil moisture in real time and automatically activates a water pump when the soil becomes dry.
+# 🌱 Autonomous Plant Watering System (Java + Arduino)
 
-⚙️ How It Works
-	•	A soil moisture sensor continuously measures soil conditions.
-	•	Sensor data is sent to the Java application via serial communication.
-	•	When moisture drops below a set threshold:
-	•	The system activates a MOSFET/Relay module.
-	•	The water pump turns on.
-	•	Once optimal moisture is reached, the pump turns off.
-	•	A live graph displays soil moisture levels in real time.
+## Introduction
+This project implements an automated plant watering system using **Java** integrated with an **Arduino-based hardware setup**. The system monitors soil moisture in real time and automatically waters the plant when the soil becomes dry.
 
-Technologies Used
-	•	Java
-	•	Arduino
-	•	Soil Moisture Sensor
-	•	MOSFET / Relay Module
-	•	Serial Communication
+---
 
- Results
+## Design Analysis
+The system operates autonomously using a soil moisture sensor and a water pump. The Java application processes incoming sensor data and controls the pump based on predefined moisture thresholds.
 
+### Software Components
+- Java control program  
+- Serial communication interface  
+- Real-time moisture monitoring  
+
+### Hardware Components
+- Arduino board  
+- Soil moisture sensor  
+- MOSFET or Relay module  
+- Water pump  
+
+---
+
+## Procedure
+1. The soil moisture sensor continuously measures soil conditions.  
+2. Sensor data is transmitted to the Java application.  
+3. If the soil is dry, the system activates the pump.  
+4. Once optimal moisture is reached, the pump is turned off.  
+5. The monitoring cycle repeats automatically.
+
+---
+
+## Results
 The system successfully:
-	•	Detected dry soil conditions
-	•	Activated and deactivated the pump automatically
-	•	Displayed real-time moisture data
-
- Key Concepts
-	•	Object-Oriented Programming
-	•	Hardware–Software Integration
-	•	Real-Time Monitoring
-	•	Automation Logic
+- Detected dry soil conditions  
+- Activated and deactivated the pump appropriately  
+- Displayed real-time soil moisture data  
